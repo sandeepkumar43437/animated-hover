@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Boxes</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #262626;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .animated-box {
+        width: 300px;
+        padding: 1.2rem;
+        margin-left: -2.5rem;
+        background: #313131;
+        color: rgba(255, 255, 255, 0.75);
+        border-radius: 0.75rem;
+        box-shadow: -10px 0px 580px #000;
+        transition: .5s;
+    }
+    .animated-box:nth-child(1) {
+        margin-left: 0rem;
+    }
+    .animated-box h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .animated-box p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .animated-box:hover {
+        color: #fff;
+        padding: 40px 20px;
+    }
+    .animated-box:hover + .animated-box {
+        margin-left: 0.5rem;
+    }
+
+</style>
+
+<body>
+    <div class="animated-box">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium impedit esse accusamus. Voluptatibus unde maxime, obcaecati, minima itaque dolorum deserunt sed accusamus necessitatibus porro aperiam recusandae nam dicta commodi.</p>
+    </div>
+    <div class="animated-box">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium impedit esse accusamus. Voluptatibus unde maxime, obcaecati, minima itaque dolorum deserunt sed accusamus necessitatibus porro aperiam recusandae nam dicta commodi.</p>
+    </div>
+    <div class="animated-box">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium impedit esse accusamus. Voluptatibus unde maxime, obcaecati, minima itaque dolorum deserunt sed accusamus necessitatibus porro aperiam recusandae nam dicta commodi.</p>
+    </div>
+    <div class="animated-box">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium impedit esse accusamus. Voluptatibus unde maxime, obcaecati, minima itaque dolorum deserunt sed accusamus necessitatibus porro aperiam recusandae nam dicta commodi.</p>
+    </div>
+    <div class="animated-box">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium impedit esse accusamus. Voluptatibus unde maxime, obcaecati, minima itaque dolorum deserunt sed accusamus necessitatibus porro aperiam recusandae nam dicta commodi.</p>
+    </div>
+</body>
+</html>
